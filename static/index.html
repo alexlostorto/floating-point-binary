@@ -20,7 +20,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" /> -->
 
         <!-- Styles -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <style>
             * {
                 margin: 0;
@@ -65,36 +65,132 @@
     <body>
         <section class="floating-point-calculator">
             <h1>Floating Point Binary</h1>
-            <div id="mantissa" class="binary-inputs">
-                <label for="binary-minus-1">-1</label>
-                <label for="binary-1-over-2">1/2</label>
-                <label for="binary-1-over-4">1/4</label>
-                <label for="binary-1-over-8">1/8</label>
-                <label for="binary-1-over-16">1/16</label>
-                <label for="binary-1-over-32">1/32</label>
-                <label for="binary-1-over-64">1/64</label>
-                <label for="binary-1-over-128">1/128</label>
-                <input id="binary-minus-1" type="number">
-                <input id="binary-1-over-2" type="number">
-                <input id="binary-1-over-4" type="number">
-                <input id="binary-1-over-8" type="number">
-                <input id="binary-1-over-16" type="number">
-                <input id="binary-1-over-32" type="number">
-                <input id="binary-1-over-64" type="number">
-                <input id="binary-1-over-128" type="number">
+            <div class="convert">
+                <span class="convert-text">Binary</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="convert-text">Mantissa</span>
             </div>
-            <div id="exponent" class="binary-inputs">
-                <label for="exponent-minus-16">-16</label>
-                <label for="exponent-8">8</label>
-                <label for="exponent-4">4</label>
-                <label for="exponent-2">2</label>
-                <label for="exponent-1">1</label>
-                <input id="exponent-minus-16" type="number">
-                <input id="exponent-8" type="number">
-                <input id="exponent-4" type="number">
-                <input id="exponent-2" type="number">
-                <input id="exponent-1" type="number">
-            </div>
+            <section id="mantissa-section">
+                <div id="mantissa" class="binary-inputs">
+                    <div>
+                        <label for="binary-minus-1">-1</label>
+                        <input id="binary-minus-1" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-2">1/2</label>
+                        <input id="binary-1-over-2" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-4">1/4</label>
+                        <input id="binary-1-over-4" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-8">1/8</label>
+                        <input id="binary-1-over-8" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-16">1/16</label>
+                        <input id="binary-1-over-16" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-32">1/32</label>
+                        <input id="binary-1-over-32" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-64">1/64</label>
+                        <input id="binary-1-over-64" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-128">1/128</label>
+                        <input id="binary-1-over-128" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-256">1/256</label>
+                        <input id="binary-1-over-256" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-512">1/512</label>
+                        <input id="binary-1-over-512" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1-over-1024">1/1024</label>
+                        <input id="binary-1-over-1024" type="number">
+                    </div>
+                </div>
+                <div id="exponent" class="binary-inputs">
+                    <div>
+                        <label for="exponent-minus-16">-16</label>
+                        <input id="exponent-minus-16" type="number">
+                    </div>
+                    <div>
+                        <label for="exponent-8">8</label>
+                        <input id="exponent-8" type="number">
+                    </div>
+                    <div>
+                        <label for="exponent-4">4</label>
+                        <input id="exponent-4" type="number">
+                    </div>
+                    <div>
+                        <label for="exponent-2">2</label>
+                        <input id="exponent-2" type="number">
+                    </div>
+                    <div>
+                        <label for="exponent-1">1</label>
+                        <input id="exponent-1" type="number">
+                    </div>
+                </div>
+            </section>
+            <section id="binary-section">
+                <div id="binary" class="binary-inputs">
+                    <div>
+                        <label for="binary-minus-1024">-1024</label>
+                        <input id="binary-minus-1024" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-512">512</label>
+                        <input id="binary-512" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-256">256</label>
+                        <input id="binary-256" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-128">128</label>
+                        <input id="binary-128" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-64">64</label>
+                        <input id="binary-64" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-32">32</label>
+                        <input id="binary-32" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-16">16</label>
+                        <input id="binary-16" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-8">8</label>
+                        <input id="binary-8" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-4">4</label>
+                        <input id="binary-4" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-2">2</label>
+                        <input id="binary-2" type="number">
+                    </div>
+                    <div>
+                        <label for="binary-1">1</label>
+                        <input id="binary-1" type="number">
+                    </div>
+                </div>
+            </section>
             <h2 id="value">0</h2>
         </section>
     </body>
