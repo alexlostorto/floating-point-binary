@@ -8,9 +8,16 @@
 
 ## ✨ Features
 
-- Floating point binary calculator created using html, css and vanilla javascript.
+- Uses two's complement
+- Automatically converts fixed point binary to mantissa and exponent
+- Range of fixed binary value can be adjusted
+- Allows 16-bit fixed-point binary number
+
+## 💻 Code
+
 - Uses bootstrap
-- Allows 16 bit fixed-point binary number
+- Created using html, css and vanilla javascript
+- PHP used for modularisation
 
 ## 📋 To-do List
 
