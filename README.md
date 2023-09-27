@@ -4,7 +4,7 @@
   <b>Mantissa is veryyy confusing.</b>
 </p>
 
-<!-- <p align="center"><img width="100%" src=".github/desktop.png" alt="desktop version of the floating point binary calculator" /></p> -->
+<p align="center"><img width="100%" src=".github/desktop.png" alt="desktop version of the floating point binary calculator" /></p>
 
 ## ✨ Features
 
