@@ -27,12 +27,19 @@
     display: none;
 }
 
+#binary section {
+    display: flex;
+    gap: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
 .binary-inputs {
     padding-top: 2rem;
     height: min-content;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 1rem;
 }
 
@@ -140,4 +147,35 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.buttons {
+    justify-content: end;
+    flex-direction: row !important;
+}
+
+.buttons button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0.4rem 0.8rem;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.buttons button svg {
+    fill: white;
+}
+
+.buttons button:hover {
+    background-color: white;
+    outline: 3px solid black;
+}
+
+.buttons button:hover svg {
+    fill: black;
+}
+
+#subtract-binary-right {
+    display: none;
 }

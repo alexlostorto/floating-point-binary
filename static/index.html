@@ -76,8 +76,8 @@
             <section id="mantissa-section">
                 <div id="mantissa" class="binary-inputs">
                     <div>
-                        <label for="binary-minus-1">-1</label>
-                        <input id="binary-minus-1" type="number">
+                        <label for="binary-1">-1</label>
+                        <input id="binary-1" type="number">
                     </div>
                     <div>
                         <label for="binary-1-over-2">1/2</label>
@@ -122,8 +122,8 @@
                 </div>
                 <div id="exponent" class="binary-inputs">
                     <div>
-                        <label for="exponent-minus-16">-16</label>
-                        <input id="exponent-minus-16" type="number">
+                        <label for="exponent-16">-16</label>
+                        <input id="exponent-16" type="number">
                     </div>
                     <div>
                         <label for="exponent-8">8</label>
@@ -145,49 +145,75 @@
             </section>
             <section id="binary-section">
                 <div id="binary" class="binary-inputs">
-                    <div>
-                        <label for="binary-minus-1024">-1024</label>
-                        <input id="binary-minus-1024" type="number">
+                    <div class="buttons">
+                        <button id="add-binary-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+                            </svg>
+                        </button>
+                        <button id="subtract-binary-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                            </svg>
+                        </button>
                     </div>
-                    <div>
-                        <label for="binary-512">512</label>
-                        <input id="binary-512" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-256">256</label>
-                        <input id="binary-256" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-128">128</label>
-                        <input id="binary-128" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-64">64</label>
-                        <input id="binary-64" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-32">32</label>
-                        <input id="binary-32" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-16">16</label>
-                        <input id="binary-16" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-8">8</label>
-                        <input id="binary-8" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-4">4</label>
-                        <input id="binary-4" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-2">2</label>
-                        <input id="binary-2" type="number">
-                    </div>
-                    <div>
-                        <label for="binary-1">1</label>
-                        <input id="binary-1" type="number">
+                    <section>
+                        <div>
+                            <label for="binary-1024">-1024</label>
+                            <input id="binary-1024" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-512">512</label>
+                            <input id="binary-512" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-256">256</label>
+                            <input id="binary-256" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-128">128</label>
+                            <input id="binary-128" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-64">64</label>
+                            <input id="binary-64" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-32">32</label>
+                            <input id="binary-32" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-16">16</label>
+                            <input id="binary-16" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-8">8</label>
+                            <input id="binary-8" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-4">4</label>
+                            <input id="binary-4" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-2">2</label>
+                            <input id="binary-2" type="number">
+                        </div>
+                        <div>
+                            <label for="binary-1">1</label>
+                            <input id="binary-1" type="number">
+                        </div>
+                    </section>
+                    <div class="buttons">
+                        <button id="subtract-binary-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                            </svg>
+                        </button>
+                        <button id="add-binary-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </section>
