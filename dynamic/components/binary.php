@@ -33,6 +33,9 @@
 
     .binary-inputs input {
         text-align: center;
+        padding: 0.1rem 0;
+        border: 1px solid black;
+        box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 1);
     }
 
     .binary-inputs input::-webkit-inner-spin-button,

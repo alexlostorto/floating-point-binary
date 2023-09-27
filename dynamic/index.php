@@ -13,25 +13,12 @@ include('components/header.php');
     @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
         font-family: 'Jost', sans-serif;
-    }
-
-    html, body {
-        width: 100%;
-        height: 100%;
     }
 
     body {
         background-image: url('images/background.jpg');
         background-size: cover;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
     }
 
     .floating-point-calculator {
@@ -73,8 +60,7 @@ include('components/header.php');
     <?php include('components/convert.php'); ?>
     <?php include('components/binary.php'); ?>
     <?php include('components/mantissa.php'); ?>
-
-    <h2 id="value" class="pt-4 pb-3">0</h2>
+    <?php include('components/output.php'); ?>
 </section>
 
 <?php include('components/footer.php'); ?>

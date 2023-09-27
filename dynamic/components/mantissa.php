@@ -132,7 +132,7 @@ function updateMantissa() {
     const mantissaInputs = document.querySelectorAll("#mantissa input");
 
     for (i=0; i<binaryValues.length; i++) {
-        mantissaInputs[i].value = binaryValues[i];
+        mantissaInputs[i].value = binaryValues[i] >= 1 ? binaryValues[i] : 0;
     }
 
     updateExponent(exponent);

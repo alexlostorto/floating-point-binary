@@ -1,15 +1,4 @@
 <style>
-    .convert {
-        padding-top: 1vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .convert-text {
-        padding: 0 1rem;
-    }
-
     .switch {
         position: relative;
         display: inline-block;
@@ -30,7 +19,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--light);
+        background-color: white;
         box-shadow: 0 0 10px black;
         -webkit-transition: .4s;
         transition: .4s;
@@ -49,7 +38,7 @@
     }
 
     input:checked + .slider {
-        background-color: white;
+        background-color: black;
         box-shadow: 0 0 10px black;
     }
 
@@ -57,6 +46,7 @@
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
+        background-color: white;
     }
 
     .slider.round {
@@ -68,13 +58,13 @@
     }
 </style>
 
-<div class="convert">
-    <span class="convert-text">Binary</span>
+<div class="convert pt-4 d-flex align-items-center justify-content-center">
+    <span class="convert-text px-3">Binary</span>
     <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
     </label>
-    <span class="convert-text">Mantissa</span>
+    <span class="convert-text px-3">Mantissa</span>
 </div>
 
 <script>
