@@ -26,7 +26,7 @@ include('components/header.php');
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
         padding: 1.5rem 2rem 0;
         border-radius: 2rem;
-        min-width: 50vw;
+        min-width: 50rem;
         width: min-content;
         height: min-content;
     }

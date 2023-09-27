@@ -67,7 +67,7 @@
         align-items: center;
         justify-content: center;
         display: flex;
-        padding: 0.4rem 0.8rem;
+        padding: 0.5rem 0.8rem;
         background-color: black;
         border-radius: 10px;
     }
