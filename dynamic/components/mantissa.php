@@ -120,6 +120,10 @@ function updateMantissa() {
         }
     })
 
+    while (document.querySelectorAll("#mantissa input").length > 9) {
+        document.querySelector("#mantissa").lastElementChild.remove();
+    }
+
     while (binaryValues.length > document.querySelectorAll("#mantissa input").length) {
         const parentElement = document.querySelector("#mantissa").lastElementChild;
         const leastSignificantBit = parentElement.querySelector("label").textContent.replace("-", "");
